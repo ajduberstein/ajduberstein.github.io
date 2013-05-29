@@ -14,8 +14,9 @@ tagline: Intersection of programming and social science
 author :
   name : Andrew Duberstein
   email : ajduberstein@gmail.com
-  github : ajduberstein
-  twitter : ajdstein
+  github : http://github.com/ajduberstein
+  twitter : http://twitter.com/ajdstein
+  linkedin : http://www.linkedin.com/pub/andrew-duberstein/37/330/896
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
