@@ -53,7 +53,8 @@
       </div>
       <hr>
       <footer>
-      <p> &#8594; <a href="{{site.author.github}}">GitHub</a> &#8594;<a href="{{site.author.twitter}}">Twitter</a> &#8594;<a href="{{site.author.linkedin}}">LinkedIn</a></p>
+      <p id="contact"> &#8594; <a href="{{site.author.github}}">GitHub</a> &#8594;<a href="{{site.author.twitter}}">Twitter</a> &#8594;
+        <a href="{{site.author.linkedin}}">LinkedIn</a> &#8594; <a href=mailto:ajduberstein@gmail.com>Email</a></p>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} 
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>

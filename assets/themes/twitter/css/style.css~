@@ -1,5 +1,5 @@
 /* Custom container */
-footer{
+p#contact{
   text-align: center;
 }
 
