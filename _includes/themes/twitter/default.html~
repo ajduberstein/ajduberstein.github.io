@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta content="The personal site of Andrew Duberstein, a data analyst in the Cincinnati area." name="description" />
-    <meta content="andrew duberstein,blog,sas,data science,business analytics,programming,android,development" name="keywords" />
+    <meta content="andrew duberstein,blog,sas,data,business,analytics,programming,android,development" name="keywords" />
+    <meta name="google-site-verification" content="google9ba518c63b044cea.html"
 
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
