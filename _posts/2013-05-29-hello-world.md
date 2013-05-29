@@ -11,4 +11,4 @@ I've never blogged before, but I feel it's something you're required to do when 
 
 I promise you'll enjoy this.
 
-*A hearty thanks to [Jekyll Bootstrap](http://jekyllbootstrap.com/) for this even being possible.*
+A hearty thanks to [Jekyll Bootstrap](http://jekyllbootstrap.com/) for this even being possible.
