@@ -4,7 +4,7 @@ title : Cincinnati
 category : Observational
 tagline: "Some curious facts"
 image: http://upload.wikimedia.org/wikipedia/commons/c/ce/Cincinnati_Subway_-_Race_St._Station.jpg
-tags : [ Cincinnati, beginnings, lizards]
+tags : [ Cincinnati, beginning, lizards, transportation]
 ---
 {% include JB/setup %}
 

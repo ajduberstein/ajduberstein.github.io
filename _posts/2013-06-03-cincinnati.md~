@@ -4,7 +4,7 @@ title : Cincinnati
 category : Observational
 tagline: "Some curious facts"
 image: http://upload.wikimedia.org/wikipedia/commons/c/ce/Cincinnati_Subway_-_Race_St._Station.jpg
-tags : [ Cincinnati, beginnings, lizards]
+tags : [ Cincinnati, beginning, lizards, transportation]
 ---
 {% include JB/setup %}
 
@@ -43,3 +43,4 @@ As I run the streets, four-inch long sunbathing reptiles scurry off the sidewalk
 small lizards and weird traffic are the worst of this city, I'll deal.
 I do propose the tourism motto, "Welcome to Cincinnati, where dreams do come true, 
 especially if you're a nine-year-old boy who loves lizards." 
+
