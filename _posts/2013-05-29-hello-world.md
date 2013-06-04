@@ -2,7 +2,7 @@
 layout: page
 title : Hello World
 category : metasite
-tagling: "A first post"
+tagline : "A first post"
 tags : [ intro, beginning]
 ---
 {% include JB/setup %}
