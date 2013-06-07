@@ -13,15 +13,15 @@ Cincinnati is my new place of residence. It has some unique features:
 1. ##[It's home to the largest subway system that never was.](http://en.wikipedia.org/wiki/Cincinnati_Subway)
 There's an extensive subway system under the city that was never used.
 Its construction unforeseeably costly after World War I increased the prices of materials,
-and inception of the Great Depression in 1929 meant there were more nails in the coffin
-of the idea than its trackbed. Nick Clooney, best known as George's Brother, 
+and the inception of the Great Depression in 1929 meant there were more nails in the coffin
+of the idea than its trackbed. Nick Clooney, best known as George's brother, 
 proposed making part of the system into an underground mall, but his insurers
 weren't keen.
 2. ##[There are ten Fortune 500 companies in the area.](http://www.wcpo.com/dpp/money/business_news/fortune-500-list-has-ten-companies-from-greater-cincinnati)
 That's more than Columbus or the entire states of Indiana and Kentucky. It seems that 
 being located on the Ohio River and adjacent to many pig farms is what started the place
 off. Indeed, Procter and Gamble created soap from lard and could ship it using the Ohio
-River. Kroger's founding and success probably has much to do with its adjacency to P&amp;G,
+River. Grocery retailer Kroger's founding and success probably has much to do with its adjacency to P&amp;G,
 agriculture, and waterways.
 3. ##The city is covered in Italian lizards.
 Among the more unsettling truths about Cincinnati, there are lizards everywhere.
