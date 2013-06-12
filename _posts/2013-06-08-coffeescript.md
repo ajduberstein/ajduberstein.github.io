@@ -1,0 +1,36 @@
+---
+layout: page
+title : CoffeeScript, Part I
+category : Tools of the Trade
+tagline: "Setting up the web's favorite scripting language on Mac OS X"
+image: http://coffeescript.org/documentation/images/logo.png
+tags : [ CoffeeScript, tutorial, tools]
+---
+{% include JB/setup %}
+
+*(These are really notes on the ["Meet CoffeeScript" Peepcode screencast](https://peepcode.com/products/coffeescript), which gets my ringing endorsement.)*
+
+##Installation 
+1. For OS X, use [Homebrew](http://mxcl.github.io/homebrew/) in Terminal. The line `brew install node` will do the trick. It took 3 minutes on my 2012 MacBook Air.
+2. Node Package Manager (NPM) comes default in node-js 0.10.10.
+3. Type `node --version` to find out whether it installed.
+4. Install CoffeeScript with `npm install -g coffee-script`.
+5. Type `coffee` &mdash; this should begin the CoffeeScript REPL.
+<br/>
+**Note**:
+<br/>
+I got this error when I did that (I'm on Mac OS 10.8.3)&mdash;
+<br/>
+`-bash: coffee: command not found`
+<br/>
+If you get this, use your favorite text editor to modify your ~/.bash_profile and include the line 
+<br/>
+`export PATH=/usr/local/share/npm/lib/node_modules/coffee-script/bin/:$PATH`
+6. Install syntax highlighting for your favorite text editor. I'm using [vim-coffee-script](https://github.com/kchmck/vim-coffee-script).
+
+##Compiling CoffeeScript
+`coffee --compile public/js/` would compile the contents of the public/js/ directory.
+The compiler is one-way: Javascript code cannot be converted back to CoffeeScript.
+The command `coffee -wc .` will automatically compile all the files in the current directory and sub-directories ending in .coffee.
+
+I'll have a tutorial on the language itself up later.
