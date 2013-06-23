@@ -1,0 +1,71 @@
+---
+layout: page
+title : CoffeeScript, Part II
+category : Tools of the Trade
+tagline: "Writing Tetris in CoffeeScript"
+image: http://ichef.bbci.co.uk/wwfuture/624_351/images/live/p0/10/2g/p0102gs2.jpg
+tags : [ CoffeeScript, tutorial, Tetris, project]
+---
+{% include JB/setup %}
+
+##Tetris
+I very much prefer live fire to blanks &#8212; putting code into practice, choosing a project and completing it, always seems like the best way to learn.
+
+I decided to put my knowledge of CoffeeScript to use and write a Tetris game in pure CoffeeScript.
+To that end, I've composed this post, a journal of the problem-solving steps involved in writing the app.
+
+##Starting off
+Life experience has taught me that having a favorite text editor and reading xkcd have a strong positive correlation with love of Tetris.
+Despite intimate familiarity with the game, I wanted to find some rigorous guideline to assure thoroughness.
+
+Sure enough, the Tetris Company enforces a [standard](http://tetris.wikia.com/wiki/Tetris_Guideline).
+
+Relevant facts:
+- *Canvas:* The canvas is 22-by-10, where the top two rows are hidden.
+- *Shapes:* A "Tetromino" is the technical name for a Tetris shape. Colors and shapes are assigned as follows:
+  -Cyan "I" shape
+  -Yellow "O" shape
+  -Purple "T" shape
+  -Green "S" shape
+  -Red "Z" shape
+  -Blue "J" shape
+  -Orange "L" shape
+- *Spawn rules:*I and O spawn in the middle columns; the rest spawn in the left-middle; the flat-side is pointed down at spawn. There is an equal weight to the appearance of any shape.
+- *Controls:* Left-rotate, right-rotate, and hard-drop-vs.-soft-drop are player controls.
+- *Other features:* Preview window, music, and ghost piece, which I may or may not ignore right now.
+
+I'll create the following objects:
+-A cell class, which has color and a height/width in pixels.
+-A Tetromino class
+-A Tetris gameboard, which has one-to-many Tetrominos
+
+Of course, I don't actually knowhow to write 2D graphics to the screen in CoffeeScript, so I googled it and found this [post on Conway's Game of Life](http://www.ibm.com/developerworks/library/wa-coffeescriptcanvas/).
+
+Conway's Game of Life is also on a 2D grid, which helps with drawing the canvas.
+
+Taking from the code on that page, 
+
+```
+drawGrid: ->
+  for row in [0...@numberOfRows]
+    for column in [0...@numberOfColumns]
+    @drawCell @currentCellGeneration[row][column]
+
+  drawCell: (cell) ->
+    x = cell.column * @cellSize
+    y = cell.row * @cellSize
+
+  if cell.isOccupied
+    fillStyle = 'rgb(242, 198, 65)'
+  else
+    fillStyle = 'rgb(38, 38, 38)'
+
+@drawingContext.strokeStyle = 'rgba(242, 198, 65, 0.1)'
+@drawingContext.strokeRect x, y, @cellSize, @cellSize
+
+@drawingContext.fillStyle = fillStyle
+@drawingContext.fillRect x, y, @cellSize, @cellSize
+```
+For the first time in my life, I turned off caching on my browser, the process by which your browser stores CSS and Javascript files in order to speed up loading a page in the future. I suppose this is what adulthood feels like.
+
+
