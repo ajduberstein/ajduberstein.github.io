@@ -43,6 +43,7 @@ Of course, I don't actually knowhow to write 2D graphics to the screen in Coffee
 
 Conway's Game of Life is also on a 2D grid, which helps with drawing the canvas.
 
+<<<<<<< Updated upstream
 Taking from the code on that page, 
 
 ```
@@ -66,6 +67,9 @@ drawGrid: ->
 @drawingContext.fillStyle = fillStyle
 @drawingContext.fillRect x, y, @cellSize, @cellSize
 ```
+
+=======
+>>>>>>> Stashed changes
 For the first time in my life, I turned off caching on my browser, the process by which your browser stores CSS and Javascript files in order to speed up loading a page in the future. I suppose this is what adulthood feels like.
 
 
