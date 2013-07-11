@@ -1,9 +1,9 @@
 ---
 layout: page
-title : Excel Shortcuts
+title : Excel Tips
 category : Tools of the Trade
-tagline: 
-image: 
+tagline: A constantly growing list
+image: http://pubpages.unh.edu/~zjv6/excel-logo.jpg
 tags : [Excel, analysis, tools]
 ---
 {% include JB/setup %}
