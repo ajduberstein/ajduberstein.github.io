@@ -28,3 +28,9 @@ tags : [Excel, analysis, tools]
 
 ##Text to Columns
 - Text to Columns will replace a delimited cell of information with a bunch of fields in separate rows and columns. Go to Data >> Text to Columns.
+
+##Useful Shortcuts
+- **Insert Column to the Right**: `Alt, I, C`
+- **Insert Row Above**: `Alt, I, R`
+- **Paste Special**: `Alt, e, s`
+- **Delete All (Including Formatting)**: `Alt, h, e, a`
