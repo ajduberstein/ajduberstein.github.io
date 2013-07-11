@@ -23,3 +23,9 @@ tags : [Excel, analysis, tools]
 - Next, use an `INDEX` command &#8212; let your first input be a range of key values (that pair with your drop-down inputs) and your second input be the *Cell Link* you chose earlier.  
    
 - **Linking to Values**: Link to a set of values in a table using the key values and `VLOOKUP` commands.
+
+##Filters and Removing Duplicates
+
+- `Alt, h, s` is the shortcut for a filter.
+- **Removing duplicates**: Go to Data >> Sort &amp; Filter >> Advanced, select "Filter the List, in place," and copy the results to another location.
+- "Filtering by color" is one of many bizarre options Excel offers.
