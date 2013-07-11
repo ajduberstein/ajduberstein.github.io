@@ -12,9 +12,9 @@ tags : [Excel, analysis, tools]
 
 -  It won't do distinct counts. Instead, make what you're trying to count the row label in your table.
   
-- *Slicer* &#8212; removes variables of non-interest; a more powerful filter.
+- **Slicer** &#8212; removes variables of non-interest; a more powerful filter.
   
--  *Calculated Fields* &#8212; adds a custom calculation as a variable in the table. Go to Insert >> PivotTable tools - Options >> Fields, Items, &amp; Sets, and create a calculated field.
+-  **Calculated Fields** &#8212; adds a custom calculation as a variable in the table. Go to Insert >> PivotTable tools - Options >> Fields, Items, &amp; Sets, and create a calculated field.
 
 ##Drop-downs
 
