@@ -25,3 +25,6 @@ tags : [Excel, analysis, tools]
 - `Alt, h, s` is the shortcut for a filter.
 - **Removing duplicates**: Go to Data >> Sort &amp; Filter >> Advanced, select "Filter the List, in place," and copy the results to another location.
 - "Filtering by color" is one of many bizarre options Excel offers.
+
+##Filters and Removing Duplicates
+- Text-to-Columns will replace a delimited cell of information with a bunch of fields in separate rows and columns. Go to Data >> Text to Columns.
