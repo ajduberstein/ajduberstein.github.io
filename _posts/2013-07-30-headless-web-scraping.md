@@ -2,7 +2,7 @@
 layout: page 
 title : Headless Web-scraping with PhantomJS and GhostDriver 
 category : Tools of the Trade
-tagline: "Setup for Mac OS X and an Ubuntu VM on Windows 7"
+tagline: Setup for Mac OS X and an Ubuntu VM on Windows 7
 image: http://phantomjs.org/images/phantomjs-logo.png
 tags : [ web-crawling, phantomjs, python, ubuntu, virtualbox]
 ---
