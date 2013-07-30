@@ -1,0 +1,50 @@
+---
+layout: page
+title : CoffeeScript, Part II
+category : Tools of the Trade
+tagline: "Writing Tetris in CoffeeScript"
+image: http://ichef.bbci.co.uk/wwfuture/624_351/images/live/p0/10/2g/p0102gs2.jpg
+tags : [ CoffeeScript, tutorial, Tetris, project]
+---
+{% include JB/setup %}
+
+##Tetris
+I very much prefer live fire to blanks &#8212; putting code into practice, choosing a project and completing it, always seems like the best way to learn.
+
+I decided to put my knowledge of CoffeeScript to use and write a Tetris game in pure CoffeeScript.
+To that end, I've composed this post, a journal of the problem-solving steps involved in writing the app.
+
+##Starting off
+Life experience has taught me that having a favorite text editor and reading xkcd have a strong positive correlation with love of Tetris.
+Despite intimate familiarity with the game, I wanted to find some rigorous guideline to assure thoroughness.
+
+Sure enough, the Tetris Company enforces a [standard](http://tetris.wikia.com/wiki/Tetris_Guideline).
+
+Relevant facts:
+- *Canvas:* The canvas is 22-by-10, where the top two rows are hidden.
+- *Shapes:* A "Tetromino" is the technical name for a Tetris shape. Colors and shapes are assigned as follows:
+  1. Cyan "I" shape
+  2. Yellow "O" shape
+  3. Purple "T" shape
+  4. Green "S" shape
+  5. Red "Z" shape
+  6. Blue "J" shape
+  7. Orange "L" shape
+- *Spawn rules:* I and O spawn in the middle columns; the rest spawn in the left-middle; the flat-side is pointed down at spawn. There is an equal probability of the appearance of any shape.
+- *Controls:* Left-rotate, right-rotate, and hard-drop-vs.-soft-drop are player controls.
+- *Other features:* Preview window, music, and ghost piece, which I may or may not ignore right now.
+
+I created the following objects:
+
+- A cell class, which has color and a height/width in pixels.
+- A Tetromino class
+- A Tetris gameboard, which has one-to-many Tetrominos
+
+For the first time in my life, I turned off caching on my browser, the process by which your browser stores CSS and Javascript files in order to speed up loading a page in the future. I suppose this is what adulthood feels like.
+
+I've since asked two questions on Stack Overflow, both very basic in nature, and received responses in less than twenty minutes for both.
+
+- I couldn't figure out how to use [the for loop with ranges](http://stackoverflow.com/questions/17396523/cannot-enter-coffeescript-for-loop)
+- I forgot for a moment that web browsers [read the page vertically, starting from the top.](http://stackoverflow.com/questions/17255692/why-is-document-getelementbyid-returning-a-null-value)
+
+Both problems I spent more time on than I'm willing to admit. I insist: when in doubt, ask.
