@@ -1,0 +1,36 @@
+---
+layout: page
+title : Excel Tips
+category : Tools of the Trade
+tagline: A constantly growing list
+image: http://pubpages.unh.edu/~zjv6/excel-logo.jpg
+tags : [Excel, analysis, tools]
+---
+{% include JB/setup %}
+
+##PivotTable
+
+-  It won't do distinct counts. Instead, make what you're trying to count the row label in your table.
+- **Slicer** &#8212; removes variables of non-interest; a more powerful filter.
+-  **Calculated Fields** &#8212; adds a custom calculation as a variable in the table. Go to Insert >> PivotTable tools - Options >> Fields, Items, &amp; Sets, and create a calculated field.
+
+##Drop-downs
+
+- **Creating a button**: Go to your Developer tab >> Insert >> Combo Box. Place the button. Right-click the button and select "Format Control." The *Input Range* is the range of values you wish to display in your drop-down. *Cell Link* will be the cell that corresponds to the row number in the drop-down. This number will change based on what is currently chosen in your drop-down. 
+- Next, use an `INDEX` command &#8212; let your first input be a range of key values (that pair with your drop-down inputs) and your second input be the *Cell Link* you chose earlier.  
+- **Linking to Values**: Link to a set of values in a table using the key values and `VLOOKUP` commands.
+
+##Filters and Removing Duplicates
+
+- `Alt, h, s` is the shortcut for a filter.
+- **Removing duplicates**: Go to Data >> Sort &amp; Filter >> Advanced, select "Filter the List, in place," and copy the results to another location.
+- "Filtering by color" is one of many bizarre options Excel offers.
+
+##Text to Columns
+- Text to Columns will replace a delimited cell of information with a bunch of fields in separate rows and columns. Go to Data >> Text to Columns.
+
+##Useful Shortcuts
+- **Insert Column to the Right**: `Alt, I, C`
+- **Insert Row Above**: `Alt, I, R`
+- **Paste Special**: `Alt, e, s`
+- **Delete All (Including Formatting)**: `Alt, h, e, a`
