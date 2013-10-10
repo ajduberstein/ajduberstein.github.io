@@ -1,0 +1,15 @@
+---
+layout: page
+title : The future of Brick-and-Mortar Retail
+category : business
+tagline : "Why rumors of brick-and-mortar's death are greatly exaggerated."
+tags : [ groceries, analytics]
+---
+{% include JB/setup %}
+
+
+Retail stores used to be landholding companies &#8212; they offer retail space for other products. A brick-and-mortar outlet used to be the only way to bring a product to market &#8212;
+this is [obviously](http://www.amazon.com/) [no](http://www.netflix.com/) [longer](http://www.ebay.com/) [the](http://www.itunes.com/) the case. We've got more books
+sold in digital formats than in a tangible form. We've obviously distributed more music and movies that way &#8212; these are arguably the easiest targets, representing nothing more than information.
+
+Landholding companies must now be analytics companies as well. 
