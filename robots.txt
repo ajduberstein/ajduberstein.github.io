@@ -1,3 +1,4 @@
+#Yeah! The robots.txt file! You found it!
 User-agent: googlebot
 Disallow:
 
