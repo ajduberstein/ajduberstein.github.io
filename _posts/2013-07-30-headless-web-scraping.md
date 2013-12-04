@@ -13,7 +13,7 @@ and in need of a scraping tool that could trigger jQuery functions, I decided to
 Python web-scraper. However, Fruchter had an Amazon EC2 instance &#8212; I didn't want one. Here's how to webscrape for two
 different operating systems, Ubuntu 12.04 LTS and Mac OS X.
 
-- ##Mac OS X setup is phenomneally easy, as always.
+- ##Mac OS X setup is phenomenally easy
 In fact, you can follow Fruchter's instructions *almost* precisely. Install [Homebrew](http://brew.sh/) and install pip,
 the Python package manager. Also, instead of using a `wget`, which doesn't come standard on Mac OS X, a `git clone` 
 or going to the [phantom-js homepage](http://phantomjs.org/) will work just as well. Just make sure to copy
@@ -35,10 +35,3 @@ There may be a step 7. You might have to change your crawler's header if your pr
 Try following the advice [here](https://coderwall.com/p/9jgaeq), with the caveat that I have not yet tried it.
 
 You'll probably have to set a `no_proxy` variable analagously to step 4 above. Have it include '127.0.0.1'.
-
-##Why are http proxies there?
-Proxies give all machines connected to a network the same IP when sending information out into the world and receiving it.
-They exist for security purposes, masking the identity of individual machines.
-##Why does open-source software obey them?
-Seeing that they exist for security purposes, an machine that could sidestep the proxy would be at risk.
-Thus, most open-source softare packages honor the proxy server.
