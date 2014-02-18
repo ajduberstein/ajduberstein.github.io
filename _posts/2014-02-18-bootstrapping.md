@@ -1,6 +1,6 @@
 ---
 layout: page
-title : Bootstrapping
+title : K-folds cross-validation
 category : statistics
 tagline : "Notes on re-sampling"
 tags : [ big data, statistics]
@@ -25,3 +25,8 @@ on which observations are included.
 
 K-fold cross-validation addresses the problem with the validation set approach. The data is divided into *k* parts,
 one of which is used for validation and the other *k - 1* used for training. 
+
+*Caveat.* Since each training is only *(k-1)/k* as as the original training set, prediction error estimate will be biased upwards.
+
+
+
