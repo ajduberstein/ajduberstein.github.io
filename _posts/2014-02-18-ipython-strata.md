@@ -1,10 +1,9 @@
-
 ---
 layout: page
-title : Hello World
-category : metasite
-tagline : "A first post"
-tags : [ intro, beginning]
+title : Scikit-learn Strata Tutorial
+category : python
+tagline : "OSS for ML on AWS"
+tags : [ python, machine learning, AWS, big data]
 ---
 {% include JB/setup %}
 
