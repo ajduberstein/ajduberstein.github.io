@@ -30,6 +30,7 @@ It's tricky and exercises every major muscle group of SQL programming, utilizing
 
 To get the answer, here's my response:
 
+    ```sql
     SELECT p0.act
       , COUNT(act) AS times_done
       FROM
@@ -51,6 +52,7 @@ To get the answer, here's my response:
       ON p0.user_id = prev.user_id
       AND p0.ts = prev.latest
       GROUP BY act;
+      ```
 
 If you want to go a level deeper, list the number of times there was no action before signup.
 
