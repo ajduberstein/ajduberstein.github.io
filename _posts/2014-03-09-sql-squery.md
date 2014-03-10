@@ -30,8 +30,8 @@ It's tricky and exercises every major muscle group of SQL programming, utilizing
 
 To get the answer, here's my response:
 
-```sql
-SELECT p0.act
+```SQL
+  SELECT p0.act
   , COUNT(act) AS times_done
   FROM
   pages p0
