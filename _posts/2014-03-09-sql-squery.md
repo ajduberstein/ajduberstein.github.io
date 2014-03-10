@@ -13,57 +13,57 @@ like the one below and you had to find what action users took before they signed
 Assume you have no <code>LAG</code> function. How would you address it in ANSI SQL?
 
 <table>
-<tbody><tr>
-<th>USER_ID</th>
-<th>ACT</th>
-<th>TS</th>
-</tr>
-<tr>
-<td>A</td>
-<td>home</td>
-<td>1</td>
-</tr>
-<tr>
-<td>A</td>
-<td>signup</td>
-<td>2</td>
-</tr>
-<tr>
-<td>B</td>
-<td>home</td>
-<td>1</td>
-</tr>
-<tr>
-<td>B</td>
-<td>search_results</td>
-<td>2</td>
-</tr>
-<tr>
-<td>B</td>
-<td>signup</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>confirmation</td>
-<td>4</td>
-</tr>
-<tr>
-<td>C</td>
-<td>search_results</td>
-<td>1</td>
-</tr>
-<tr>
-<td>C</td>
-<td>signup</td>
-<td>2</td>
-</tr>
-<tr>
-<td>D</td>
-<td>signup</td>
-<td>1</td>
-</tr>
-</tbody>
+  <tbody><tr>
+    <th>USER_ID</th>
+    <th>ACT</th>
+    <th>TS</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>home</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>signup</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>home</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>search_results</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>signup</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>confirmation</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>search_results</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>signup</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>signup</td>
+    <td>1</td>
+  </tr>
+  </tbody>
 </table>
 
 We can see that users hit the home page once and the search_results page twice before signing up for the site.
