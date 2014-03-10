@@ -3,7 +3,7 @@ layout: page
 title : The Penultimate Puzzle Problem
 category : sql
 tagline : "A brainteaser for SQL fanatics"
-tags : [ sql, big data]
+tags : [ sql, big_data]
 ---
 {% include JB/setup %}
 
@@ -63,7 +63,8 @@ Assume you have no <code>LAG</code> function. How would you address it in ANSI S
 <td>signup</td>
 <td>1</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 We can see that users hit the home page once and the search_results page twice before signing up for the site.
 
@@ -71,30 +72,32 @@ It's tricky and exercises every major muscle group of SQL programming, utilizing
 
 To get the answer, here's my response:
 
-<code>
-SELECT p0.act
-  , COUNT(act) AS times_done
-  FROM
-  pages p0
-  RIGHT JOIN
-    (SELECT pages.user_id
-    , MAX(pages.ts) AS latest
-      FROM pages
-      RIGHT JOIN 
-        (SELECT user_id
-              , ts
-              FROM pages
-        WHERE act = 'signup'
-        ) signup_times
-      ON signup_times.user_id = pages.user_id
-      WHERE pages.ts < signup_times.ts
-      GROUP BY pages.user_id
-    ) prev
-  ON p0.user_id = prev.user_id
-  AND p0.ts = prev.latest
-  GROUP BY act;
-</code>
+  <code>
+  SELECT p0.act
+    , COUNT(act) AS times_done
+    FROM
+    pages p0
+    RIGHT JOIN
+      (SELECT pages.user_id
+      , MAX(pages.ts) AS latest
+        FROM pages
+        RIGHT JOIN 
+          (SELECT user_id
+                , ts
+                FROM pages
+          WHERE act = 'signup'
+          ) signup_times
+        ON signup_times.user_id = pages.user_id
+        WHERE pages.ts < signup_times.ts
+        GROUP BY pages.user_id
+      ) prev
+    ON p0.user_id = prev.user_id
+    AND p0.ts = prev.latest
+    GROUP BY act;
+  </code>
 
 If you want to go a level deeper, list the number of times there was no action before signup.
 
 [Here's a SQL fiddle page with live data, should you want to give it a try.](http://sqlfiddle.com/#!4/651a48/1)
+
+
