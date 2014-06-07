@@ -23,7 +23,7 @@ buys gas in exact cash amounts (like $5, $10, or $20) is inversely correlated wi
 4. **Corporate brands are brood parasites.** Business and biology have odd parallels. [First-mover advantage](http://en.wikipedia.org/wiki/First-mover_advantage) applies to the sapling that gets tallest first and shades nearby foliage,
 effectively stunting their growth; [second-mover advantage](http://en.wikipedia.org/wiki/Second-mover_advantage#Second-mover_advantage) applies to social learning, letting another take risks
 and learning from their example. In grocery, corporate brands exemplify [brood parasitism](http://en.wikipedia.org/wiki/Brood_parasite). The textbook brood parasite is the common cuckoo.
-Having read **Atlas Shrugged** (I speculate), the cuckoo hen lays her eggs in the nests of other birds and lets that bird raise her young. Corporate brands are the cuckoos of the grocery ecosystem. 
+Having read *Atlas Shrugged* (I speculate), the cuckoo hen lays her eggs in the nests of other birds and lets that bird raise her young. Corporate brands are the cuckoos of the grocery ecosystem. 
 General Mills does millions of dollars in marketing for Honey Nut Cheerios. A customer goes to the store 
 with the intent to purchase Honey Nut Cheerios and sees the nearby corporate brand product at a lower price point, and, often
 enough for this to be a profitable move, purchases the store-brand product. The store spends no money on expensive 
