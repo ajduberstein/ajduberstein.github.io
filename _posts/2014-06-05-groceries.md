@@ -27,7 +27,7 @@ Having read *Atlas Shrugged* (I speculate), the cuckoo hen lays her eggs in the 
 General Mills does millions of dollars in marketing for Honey Nut Cheerios. A customer goes to the store 
 with the intent to purchase Honey Nut Cheerios and sees the nearby corporate brand product at a lower price point, and, often
 enough for this to be a profitable move, purchases the store-brand product. The store spends no money on expensive 
-marketing&#8212;the CPG has done this. This drives down its costs while winning the store more margin
-than peddling name-brand products.
+marketing&#8212;the CPG has done this. This drives down the customer's price while winning the store more margin
+than peddling name-brand products would.
 
 5. Grocery stores often sell items like soda (which, with an insulin-like level of necessity to many Americans, reaches 19 out of 20 American households) at a loss in order to bring customers in the store.
