@@ -7,8 +7,8 @@ tags : [ san-francisco, uber]
 ---
 {% include JB/setup %}
 
-I read seeking material that resonates with me. There's a lot of tripe, so it's reverse-Russian roulette, seeking the bang amongst empty barrels.
-One lucky strike, I encountered an essay that with a sentence that explained the unease I was feeling with life in the Midwest:
+I read seeking material that resonates with me. There's a lot of tripe, so it's reverse-Russian roulette, a quest for the bang amongst empty barrels.
+One lucky strike, I encountered a sentence that summed up the unease I was feeling with life in the Midwest:
 
 **"If you've never fallen on your face, odds are you haven't attempted anything worth a damn."**
                                                                                                                                                                                                           
@@ -27,14 +27,12 @@ Money serves a similar function: When a man of Warren Buffett's wealth makes a b
 when a recent college grad makes a bad investment on $20k, he or she risks eviction. Whether it's time or money, having plenty of either resource bestows 
 the ability to correct inadequacies and battle the erroneous.
 
-This is the best age to build intellectual capital, and atrophy is the residue of too much consistency. 
+This is the best age to build intellectual capital. Since atrophy is the residue of too much consistency, consistency is to be avoided.
 Distaste for a glut of the same attracted me to the programming that got me to California to start with: **I hate having to pull this report weekly...can I automate it?**
 
 That distaste seems to be deeply Californian. Acknowledging this component of my constitution, I sought change: I shaved my head like a threadbare monk,
 applied for jobs in San Francisco at companies that I adored, landed a job with a [company in San Francisco that I adore](https://www.uber.com/), 
 and landed at SFO yesterday. 
 
-Here's the message of my previous year: Whether made out of constraint or fatigue, conscious will or subliminal guidance, decisions that expose one to nothing unusual are self-detrimental.
-The Bay Area is a fertile crescent of change, a small, sunny stripe responsible for reshaping the world this past thirty years. It craves novelty; a local
-told me recently, "One would have to try exceedingly hard to be weird in San Francisco." The Bay takes anticonformity as its input and alchemizes it into creative change.
-I look forward to getting caught up in whatever makes it whirr.
+Here's the message of my previous year: Whether made out of constraint or fatigue, conscious will or subliminal misguidance, decisions that expose one to nothing unusual are ultimately detrimental.
+The Bay Area is a fertile crescent of change, a small, sunny stripe responsible for reshaping the world this past thirty years. I look forward to getting caught up in whatever makes it whirr.
