@@ -14,12 +14,12 @@ One lucky strike, I encountered a sentence that summed up the unease I was feeli
                                                                                                                                                                                                           
 I'd made a series of familiar and safe choices in the previous year, having taken a job with a mid-sized firm that consulted for a risk-averse Fortune 500 grocery retailer. 
 Grocery is a bubble-free industry&#8212;in economic troughs, shoppers may downgrade from namebrand to store-brand but likely continue to shop at your store.
-My university education was equally tame. I'd gone to college close to home&8212;even though this decision was financial and not out of risk-aversion, I knew that if I felt overwhelmed I could
+My university education was equally tame. I'd gone to college close to home&#8212;even though this decision was financial and not out of risk-aversion, I knew that if I felt overwhelmed I could
 go home for a weekend to retreat to family and old friends.
 
 Even my geographic path through the country lacked geometric depth. 
 Raised in Dayton, I went to college in Oxford, Ohio, and took my first job in Cincinnati. I'd managed to move a roughly linear forty miles south in 23 years. 
-Should no force haved acted on this vector, I'd retire somewhere in Kentucky. I needed to do edgier, both cartographically and philosophically.
+Should no force haved acted on this vector, I'd retire somewhere in Kentucky. Both cartographically and philosophically, I needed to do something edgier.
 
 Though they're most rational to take in your early twenties, I'd taken no serious risks. Being young but conservative means you've unwisely invested your time. 
 Time is a levee against error: You can play riskily in your first few games of tennis and you have time to recover later in the match if you're still down. 
