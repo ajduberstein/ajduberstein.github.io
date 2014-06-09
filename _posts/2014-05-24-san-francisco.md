@@ -28,7 +28,7 @@ when a recent college grad makes a bad investment on $20k, he or she risks evict
 the ability to correct inadequacies and battle the erroneous.
 
 This is the best age to build intellectual capital. Since atrophy is the residue of too much consistency, consistency is to be avoided.
-Distaste for a glut of the same attracted me to the programming that got me to California to start with: **I hate having to pull this report weekly...can I automate it?**
+Distaste for a glut of the same attracted me to the programming that got me to California to start with: *I hate having to pull this report weekly...can I automate it?*
 
 That distaste seems to be deeply Californian. Acknowledging this component of my constitution, I sought change: I shaved my head like a threadbare monk,
 applied for jobs in San Francisco at companies that I adored, landed a job with a [company in San Francisco that I adore](https://www.uber.com/), 
