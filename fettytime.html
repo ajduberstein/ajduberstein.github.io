@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title> FETTY TIME </title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+	</head>
+	<body style="text-align:center;">
+		<h1 style='font-size:5em;'>IS IT FETTY TIME?</h1>
+		<div id="ft"></div>
+		<iframe id="vp" style='display:none;' width="854" height="480" src="" frameborder="0" allowfullscreen></iframe>
+	<script>
+		    var now = moment();
+		    var elem = document.getElementById("ft");
+		    if (now.hours() == 17 && now.minutes() == 38) {
+			    elem.textContent = "YEAHHH BABY";
+			    elem.style.fontSize = '8em';
+			    document.getElementById("vp").style.display = 'inline';
+			    document.getElementById("vp").src = 'https://www.youtube.com/embed/Cvu0Q4Cl7pU?autoplay=1';
+		    }
+		    else {
+		     	var meaningfulTime = moment(now.toArray().slice(0,3).concat([17, 38, 00]));
+		     	elem.textContent = "not yet. " + meaningfulTime.fromNow();
+		    }
+	</script>
+	</body>
+</html>
