@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Feedback Generator</title></head>
+<body style="color:sienna;margin-left:20px;font-size:42pt;font-family:Arial, Sans-Serif">
+<p style="text-align:center"><h1 style="text-shadow:0.1em 0.1em #FF00FF;text-align:center">T3/B3 Generator</h1></p>
+<p align="center";><button onclick="makeSentence()">Full sentences</button>
+<button onclick="makePhrase()">Key phrases</button>
+</p>
+<p id="content"></p>
+
+<script type="text/javascript">
+function makeSentence(){
+var a = ["Despite having no previous experience with", "With a profound knowledge of", "Incredibly skilled in", "#superpumped about"]
+var b = ["Python web frameworks", "teamwork", "data science", "celebrating the cities", "meritocracy and toe-stepping", "bits and atoms"]
+var c = ["delivers value", "edifies team culture", "derives actionable insights from big data", "adds value", "leverages data", "utilizes analysis", "optimizes for risk"]
+var d = ["builds measurable value", "conducts A/B tests", "embodies #superpumpedness", "makes magic", "lets builders build"]
+document.getElementById("content").innerHTML = "<em>" + a[Math.floor(Math.random()*a.length)] + " " + b[Math.floor(Math.random()*b.length)] + ", Duber " + c[Math.floor(Math.random()*c.length)] + " and " + d[Math.floor(Math.random()*d.length)] + "</em>"
+}
+function makePhrase(){
+var e = ["high-level", "innovative", "customer-obsessed", "mindful", "entrepreneurial", "collaborative"]
+var f = ["up-and-to-the-right", "big and bold", "mission-critical", "future-proof", "inspired"]
+var g = ["bits and atoms", "insights", "#superpumpedness", "science", "optimistic leadership", "solutions", "champion's mindset"]
+document.getElementById("content").innerHTML = "<em>" + e[Math.floor(Math.random()*e.length)] + " " + f[Math.floor(Math.random()*f.length)] + " " + g[Math.floor(Math.random()*g.length)] + "</em>"
+}
+</script>
+</body> 
+</html>
