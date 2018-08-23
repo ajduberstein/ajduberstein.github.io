@@ -1,1 +1,1 @@
-www.duberste.in is authored by Andrew Duberstein and runs on Jekyll Bootstrap.
+Andrew Duberstein
