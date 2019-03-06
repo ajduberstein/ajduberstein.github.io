@@ -300,11 +300,11 @@ var deckJsonApi = function (exports, core, d3Dsv) {
 
     setProps(props) {
       // HANDLE CONFIGURATION PROPS
-      if (props.indexOf('configuration') > -1) {
+      if (props.configuration) {
         this.configuration = props.configuration;
       }
 
-      if (props.indexOf('onJSONChange') > -1) {
+      if (props.onJSONChange) {
         this.onJSONChange = props.onJSONChange;
       }
     }
