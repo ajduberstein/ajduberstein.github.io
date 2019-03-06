@@ -161,7 +161,7 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       jsonProps.views = convertJSONViews(json.views, configuration);
     }
 
-    if ('initialViewState' in jsonProps) {
+    if (jsonProps.indexOf('initialViewState') > -1) {
       jsonProps.viewState = jsonProps.viewState || jsonProps.initialViewState;
     }
 
@@ -180,14 +180,14 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       return;
     }
 
-    if ('mapStyle' in jsonProps) {
+    if (jsonProps.indexOf('mapStyle') > -1) {
       jsonProps.map.style = jsonProps.mapStyle;
       jsonProps.map.mapStyle = jsonProps.mapStyle;
       delete jsonProps.mapStyle;
     }
 
     // TODO - better map handling
-    if ('viewState' in jsonProps) {
+    if (jsonProps.indexOf('viewState') > -1) {
       jsonProps.map.viewState = jsonProps.viewState;
     }
   }
@@ -242,7 +242,7 @@ var deckJsonApi = function (exports, core, d3Dsv) {
 
   function getJSONLayerProps(jsonProps, configuration) {
     const replacedProps = {};
-    for (const propName in jsonProps) {
+    for (jsonProps.indexOf(propName) > -1) {
       // eslint-disable-line guard-for-in
       const propValue = jsonProps[propName];
       // Handle accessors
@@ -300,11 +300,11 @@ var deckJsonApi = function (exports, core, d3Dsv) {
 
     setProps(props) {
       // HANDLE CONFIGURATION PROPS
-      if ('configuration' in props) {
+      if (props.indexOf('configuration') > -1) {
         this.configuration = props.configuration;
       }
 
-      if ('onJSONChange' in props) {
+      if (props.indexOf('onJSONChange') > -1) {
         this.onJSONChange = props.onJSONChange;
       }
     }
@@ -325,7 +325,7 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       // Handle `json.initialViewState`
       // If we receive new JSON we need to decide if we should update current view state
       // Current heuristic is to compare with last `initialViewState` and only update if changed
-      if ('initialViewState' in jsonProps) {
+      if (jsonProps.indexOf('initialViewState') > -1) {
         const updateViewState =
           !this.initialViewState ||
           !shallowEqualObjects(jsonProps.initialViewState, this.initialViewState);
