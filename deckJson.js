@@ -1,4 +1,4 @@
-var bundle = (function (exports, core, d3Dsv) {
+var deckJsonApi = function (exports, core, d3Dsv) {
   'use strict';
 
   // TODO - can we reuse the core util? Assuming we don't want to export it
@@ -350,4 +350,4 @@ var bundle = (function (exports, core, d3Dsv) {
 
   return exports;
 
-}({}, deck, d3Dsv));
+};
