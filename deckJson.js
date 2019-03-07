@@ -293,6 +293,7 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       this.configuration = {};
       this.onJSONChange = () => {};
       // this._onViewStateChange = this._onViewStateChange.bind(this);
+      this.convertJsonToDeckProps = this.convertJsonToDeckProps.bind(this);
       this.setProps(props);
     }
 
