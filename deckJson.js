@@ -242,7 +242,10 @@ var deckJsonApi = function (exports, core, d3Dsv) {
 
   function getJSONLayerProps(jsonProps, configuration) {
     const replacedProps = {};
-    for (propName in jsonProps) {
+    const keys = Object.keys(jsonProps)
+    var propName = null;
+    for (var i = 0; i < keys.length; i++) {
+      propName = keys[i]
       // eslint-disable-line guard-for-in
       const propValue = jsonProps[propName];
       // Handle accessors
