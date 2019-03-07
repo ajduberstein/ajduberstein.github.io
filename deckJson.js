@@ -180,14 +180,14 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       return;
     }
 
-    if (jsonProps.indexOf('mapStyle') > -1) {
+    if (jsonProps.mapStyle) {
       jsonProps.map.style = jsonProps.mapStyle;
       jsonProps.map.mapStyle = jsonProps.mapStyle;
       delete jsonProps.mapStyle;
     }
 
     // TODO - better map handling
-    if (jsonProps.indexOf('viewState') > -1) {
+    if (jsonProps.viewState) {
       jsonProps.map.viewState = jsonProps.viewState;
     }
   }
