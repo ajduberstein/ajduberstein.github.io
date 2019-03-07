@@ -325,7 +325,7 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       // Handle `json.initialViewState`
       // If we receive new JSON we need to decide if we should update current view state
       // Current heuristic is to compare with last `initialViewState` and only update if changed
-      if (jsonProps.indexOf('initialViewState') > -1) {
+      if (jsonProps.initialViewState) {
         const updateViewState =
           !this.initialViewState ||
           !shallowEqualObjects(jsonProps.initialViewState, this.initialViewState);
