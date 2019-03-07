@@ -161,7 +161,7 @@ var deckJsonApi = function (exports, core, d3Dsv) {
       jsonProps.views = convertJSONViews(json.views, configuration);
     }
 
-    if (jsonProps.indexOf('initialViewState') > -1) {
+    if (jsonProps.initialViewState) {
       jsonProps.viewState = jsonProps.viewState || jsonProps.initialViewState;
     }
 
