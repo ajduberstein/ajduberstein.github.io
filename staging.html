@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Andrew Duberstein - Personal Website</title>
-    <meta name="viewport" content="width=device-width" />
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68504066-1"></script>
     <script>
@@ -20,17 +19,17 @@ body {
   margin-bottom: 0;
   font-family: "Avenir-Book", Arial, sans-serif;
 }
-
 .body-wrapper {
   display: grid;
   max-width: 753px;
   grid-template-rows: 365px 1fr 1fr;
-  grid-gap: 35px;
+  grid-gap: 20px;
   grid-template-areas:
   "billboard billboard "
   "links links"
   "bio bio";
 }
+
 
 hr {
   display: block;
@@ -43,8 +42,10 @@ hr {
 
 .billboard {
   grid-area: billboard;
+  min-height: 30vh; 
   color: white;
   user-select: none;
+  position: relative;
 }
 
 /* billboard */
@@ -54,6 +55,7 @@ hr {
   min-height: 252px;
 }
 
+
 .billboard-h1 {
   line-height: 110px;
   font-weight: 900;
@@ -62,15 +64,17 @@ hr {
   transform: translate(20px, -110px) skew(-15deg, 0deg);
   z-index: 1;
 }
+
+
 .billboard-h1 > span {
   color: black;
-  transform: translate(-20px, -5px) rotate3d(1, 1, -1, 45deg);
+  transform: translate(-20px, -5px) rotate3d(1, 1, -0.5, 45deg);
   display: inline-block;
 }
+
 .billboard-subtext {
   position: absolute;
   height: 30px;
-  display: inline-block;
   margin-top: 15px;
   width: 753px;
   z-index: -1;
@@ -80,6 +84,7 @@ h2 {
   color: white;
   line-height: 0;
   padding: 0;
+  display: contents;
   margin-top: 9px;
   font-weight: 600;
 }
@@ -99,7 +104,7 @@ h2 {
 p {
   color: white;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 b {
