@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andrew Duberstein - Personal Website</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68504066-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-68504066-1');
+    </script>
+    <style>
+/* body and general*/
+body {
+  background: #e70215;
+  margin: 40px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  font-family: "Avenir-Book", Arial, sans-serif;
+}
+
+.body-wrapper {
+  display: grid;
+  max-width: 753px;
+  grid-template-rows: 365px 1fr 1fr;
+  grid-gap: 35px;
+  grid-template-areas:
+  "billboard billboard "
+  "links links"
+  "bio bio";
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.billboard {
+  grid-area: billboard;
+  color: white;
+  user-select: none;
+}
+
+/* billboard */
+.billboard-header-shell {
+  white-space: nowrap;
+  transform: rotate(-15deg);
+  min-height: 252px;
+}
+
+.billboard-h1 {
+  line-height: 110px;
+  font-weight: 900;
+  font-size: 120px;
+  position: absolute;
+  transform: translate(20px, -110px) skew(-15deg, 0deg);
+  z-index: 1;
+}
+.billboard-h1 > span {
+  color: black;
+  transform: translate(-20px, -5px) rotate3d(1, 1, -1, 45deg);
+  display: inline-block;
+}
+.billboard-subtext {
+  position: absolute;
+  height: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  width: 753px;
+  z-index: -1;
+}
+
+h2 {
+  color: white;
+  line-height: 0;
+  padding: 0;
+  margin-top: 9px;
+  font-weight: 600;
+}
+
+.links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.bio {
+  grid-area: bio;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+p {
+  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+b {
+  color: black;
+  font-weight: 900;
+}
+
+a {
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+}
+
+    </style>
+  </head>
+  <body>
+  <div class='body-wrapper'>
+    <section class='billboard'>
+            <div class='billboard-header-shell'>
+	      <h1 class='billboard-h1'>
+                <span>A</span><span>N</span><span>D</span><span>R</span><span>E</span><span>W</span></br>
+                <span>D</span><span>U</span><span>B</span><span>E</span><span>R</span><span>S</span><span>T</span><span>E</span><span>I</span><span>N</span></h1>
+	      <h1 class='billboard-h1'>ANDREW</br>DUBERSTEIN</h1>
+            </div>
+	    <div class='billboard-subtext'>
+		    <hr/>
+		    <p>This is the personal website of Andrew Duberstein, a software engineer in San Francisco. I'm interested in the interaction between people and technology.</p>
+	    </div>
+    </section>
+    <section class='bio'>
+      <h2>About me</h2>
+      <div class='bio-text'>
+        <p>I set up systems to process petabytes of self-driving car sensor data,
+	   wrote models that saved millions a month from fraudsters,
+	   and watched Uber grow from 300 employees in San Francisco to over 20,000 globally.
+           I'm on Twitter as <a href='https://twitter.com/ajdstein'>@ajdstein</a>.
+	   </br>
+	   </br>
+	   Need help? <b>I freelance.</b> Get in touch at ajduberstein+consulting@gmail.com.
+	   </br>
+	   
+	</p>
+      </div>
+    </section>
+    <section class='links'>
+      <h2>Links and projects</h2>
+      <div>
+        <div class='capped-bullet'>
+		<p><b><a href='https://github.com/uber/deck.gl/blob/master/bindings/python/pydeck/README.md'>pydeck</a></b>, high-scale geospatial data visualization for the Python programming language</p>
+		<p>A small selection of <b>data visualizations I did for Uber</b> in
+		    <a href='https://www.washingtonpost.com/news/wonk/wp/2014/07/21/uber-is-tapping-into-the-too-drunk-to-drive-market-user-data-suggest/'>The Washington Post</a>,
+		    <a href='https://cdn.theatlantic.com/assets/media/img/posts/2015/01/Screen_Shot_2015_01_22_at_7.23.21_PM/5bb7a8d9f.png'>The Atlantic</a>, and
+		    <a href='https://www.businessinsider.com/ubers-new-years-eve-chart-2015-2015-1'>Business Insider</a></p>
+	        <p><b><a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></b></p>
+	        <p><b><a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></b></p>
+      </div>
+    </section>
+  </div>
+  </body>
+</html>
