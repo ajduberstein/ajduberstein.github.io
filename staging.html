@@ -25,7 +25,7 @@ body {
   font-family: "Avenir-Book", "Helvetica Neue", sans-serif;
   display: grid;
   width: 700px;
-  grid-template-rows: 300px 1fr 1fr;
+  grid-template-rows: 230px 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
   "billboard billboard "
@@ -62,23 +62,24 @@ hr {
 .billboard-header-shell {
   white-space: nowrap;
   transform: rotate(-15deg);
-  min-height: 252px;
+  height: 174px;
 }
 
 
 .billboard-h1 {
-  line-height: 110px;
+  line-height: 78px;
+  letter-spacing: 15px;
   font-weight: 900;
-  font-size: 120px;
+  font-size: 80px;
   position: absolute;
-  transform: translate(20px, -110px) skew(-15deg, 0deg);
+  transform: translate(46px, -78px) skew(-15deg, 0deg);
   z-index: 1;
 }
 
 
 .billboard-h1 span {
   color: black;
-  transform: translate(-20px, -5px) rotate3d(1, 1, -0.5, 45deg);
+  transform: translate(-12px, -2px) rotate3d(2, 2, -1, 39deg);
   display: inline-block;
 }
 
@@ -86,7 +87,7 @@ hr {
   position: absolute;
   text-align: right;
   height: 30px;
-  margin-top: 15px;
+  margin-top: -5px;
   width: 700px;
   z-index: -1;
 }
@@ -124,7 +125,7 @@ b {
 }
 
 a {
-  color: black;
+  color: #fffdd0;
   font-style: none;
   text-decoration: underline;
 }
@@ -190,7 +191,7 @@ small {
            I'm on Twitter as <a href='https://twitter.com/ajdstein'>@ajdstein</a>.
 	   </br>
 	   </br>
-	   Need help? <b>I freelance.</b> Get in touch at ajduberstein+consulting@gmail.com.
+	   Need help? <b>I freelance.</b> Get in touch at <a href="mailto:ajduberstein+consulting@gmail.com">ajduberstein+consulting@gmail.com</a>.
 	   </br>
 	</p>
       </div>
@@ -199,10 +200,10 @@ small {
       <h2>Links and projects</h2>
       <div>
         <div class='capped-bullet'>
-		<p>- <b><a href='https://github.com/uber/deck.gl/blob/master/bindings/python/pydeck/README.md'>pydeck</a></b>, high-scale geospatial data visualization for the Python programming language</p>
-	        <p>- <b><a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></b></p>
-	        <p>- <b><a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></b></p>
-		<p>- A small selection of <b>data visualizations I did for Uber</b> during 2014-2015 in
+		<p>- <a href='https://github.com/uber/deck.gl/blob/master/bindings/python/pydeck/README.md'>pydeck</a>, high-scale geospatial data visualization for the Python programming language</p>
+	        <p>- <a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></p>
+	        <p>- <a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></p>
+		<p>- A small selection of data visualizations I did for Uber during 2014-2015 in
 		    <a href='https://www.washingtonpost.com/news/wonk/wp/2014/07/21/uber-is-tapping-into-the-too-drunk-to-drive-market-user-data-suggest/'>The Washington Post</a>,
 		    <a href='https://cdn.theatlantic.com/assets/media/img/posts/2015/01/Screen_Shot_2015_01_22_at_7.23.21_PM/5bb7a8d9f.png'>The Atlantic</a>, and
 		    <a href='https://www.businessinsider.com/ubers-new-years-eve-chart-2015-2015-1'>Business Insider</a></p>
