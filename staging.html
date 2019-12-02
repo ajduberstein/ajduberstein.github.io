@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Andrew Duberstein - Personal Website</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68504066-1"></script>
     <script>
@@ -13,16 +14,17 @@
     <style>
 /* body and general*/
 body {
+  margin: 0;
+  background: none;
   background: #e70215;
-  margin: 40px;
-  margin-top: 60px;
-  margin-bottom: 0;
-  font-family: "Avenir-Book", "Helvetica Neue", Arial, sans-serif;
 }
 .body-wrapper {
+  margin: 40px;
+  margin-bottom: 0;
+  font-family: "Avenir-Book", "Helvetica Neue", Arial, sans-serif;
   display: grid;
-  width: 753px;
-  grid-template-rows: 365px 1fr 1fr;
+  width: 700px;
+  grid-template-rows: 300px 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
   "billboard billboard "
@@ -66,7 +68,7 @@ hr {
 }
 
 
-.billboard-h1 > span {
+.billboard-h1 span {
   color: black;
   transform: translate(-20px, -5px) rotate3d(1, 1, -0.5, 45deg);
   display: inline-block;
@@ -74,9 +76,10 @@ hr {
 
 .billboard-subtext {
   position: absolute;
+  text-align: right;
   height: 30px;
   margin-top: 15px;
-  width: 753px;
+  width: 700px;
   z-index: -1;
 }
 
@@ -122,6 +125,38 @@ a:hover {
   color: grey;
 }
 
+small {
+  font-size: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  .body-wrapper {
+    margin: 0;
+    width: 400px!important;
+    padding: 1em;
+    padding-bottom: 0;
+  }
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+    grid-row-gap: 10px;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+    grid-row-gap: 10px;
+  }
+  .billboard-subtext {
+    width: 400px!important;
+  }
+  .billboard-header-shell {
+    transform: rotate(-15deg) scale(0.6) translate(-134px, 32px);
+  }
+}
+
+
     </style>
   </head>
   <body>
@@ -129,17 +164,17 @@ a:hover {
     <section class='billboard'>
             <div class='billboard-header-shell'>
 	      <h1 class='billboard-h1'>
-                <span>A</span><span>N</span><span>D</span><span>R</span><span>E</span><span>W</span></br>
+		      <small><span>A</span><span>N</span><span>D</span><span>R</span><span>E</span><span>W</span></small></br>
                 <span>D</span><span>U</span><span>B</span><span>E</span><span>R</span><span>S</span><span>T</span><span>E</span><span>I</span><span>N</span></h1>
-	      <h1 class='billboard-h1'>ANDREW</br>DUBERSTEIN</h1>
+	      <h1 class='billboard-h1'><small>ANDREW</small></br>DUBERSTEIN</h1>
             </div>
 	    <div class='billboard-subtext'>
+		    <p>Stories from a shy kid with dial-up</p>
 		    <hr/>
-		    <p>This is the personal website of Andrew Duberstein, a software engineer in San Francisco. I'm interested in the interaction between people and technology.</p>
 	    </div>
     </section>
     <section class='bio'>
-      <h2>About me</h2>
+      <h2>About</h2>
       <div class='bio-text'>
         <p>I set up systems to process petabytes of self-driving car sensor data,
 	   wrote models that saved millions a month from fraudsters,
@@ -149,7 +184,6 @@ a:hover {
 	   </br>
 	   Need help? <b>I freelance.</b> Get in touch at ajduberstein+consulting@gmail.com.
 	   </br>
-	   
 	</p>
       </div>
     </section>
@@ -157,14 +191,13 @@ a:hover {
       <h2>Links and projects</h2>
       <div>
         <div class='capped-bullet'>
-		<p><b><a href='https://github.com/uber/deck.gl/blob/master/bindings/python/pydeck/README.md'>pydeck</a></b>, high-scale geospatial data visualization for the Python programming language</p>
-	        <p><b><a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></b></p>
-		<p><b><a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></b></p>
-		<p>A small selection of <b>data visualizations I did for Uber</b> during 2014-2015 in
+		<p>- <b><a href='https://github.com/uber/deck.gl/blob/master/bindings/python/pydeck/README.md'>pydeck</a></b>, high-scale geospatial data visualization for the Python programming language</p>
+		<p>- A small selection of <b>data visualizations I did for Uber</b> in
 		    <a href='https://www.washingtonpost.com/news/wonk/wp/2014/07/21/uber-is-tapping-into-the-too-drunk-to-drive-market-user-data-suggest/'>The Washington Post</a>,
 		    <a href='https://cdn.theatlantic.com/assets/media/img/posts/2015/01/Screen_Shot_2015_01_22_at_7.23.21_PM/5bb7a8d9f.png'>The Atlantic</a>, and
 		    <a href='https://www.businessinsider.com/ubers-new-years-eve-chart-2015-2015-1'>Business Insider</a></p>
-
+	        <p>- <b><a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></b></p>
+	        <p>- <b><a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></b></p>
       </div>
     </section>
   </div>
