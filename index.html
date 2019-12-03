@@ -3,7 +3,6 @@
   <head>
     <title>Andrew Duberstein - Personal Website</title>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68504066-1"></script>
     <script>
@@ -12,24 +11,208 @@
       gtag('js', new Date());
       gtag('config', 'UA-68504066-1');
     </script>
+    <style>
+/* body and general*/
+body {
+  margin: 0;
+  background: none;
+  background: #e70215;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-wrapper {
+  font-weight: 600;
+  margin: 40px;
+  margin-bottom: 0;
+  font-family: "Avenir-Book", "Helvetica Neue", sans-serif;
+  display: grid;
+  width: 700px;
+  grid-template-rows: 230px 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "billboard billboard "
+  "links links"
+  "bio bio";
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.billboard {
+  grid-area: billboard;
+  min-height: 30vh; 
+  color: #fffdd0;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+  position: relative;
+}
+
+/* billboard */
+.billboard-header-shell {
+  white-space: nowrap;
+  transform: rotate(-15deg);
+  height: 174px;
+}
+
+
+.billboard-h1 {
+  line-height: 78px;
+  letter-spacing: 15px;
+  font-weight: 900;
+  font-size: 80px;
+  position: absolute;
+  transform: translate(46px, -78px) skew(-15deg, 0deg);
+  z-index: 1;
+}
+
+
+.billboard-h1 span {
+  color: black;
+  transform: translate(-12px, -2px) rotate3d(2, 2, -1, 39deg);
+  display: inline-block;
+}
+
+.billboard-subtext {
+  position: absolute;
+  text-align: right;
+  height: 30px;
+  margin-top: -5px;
+  width: 700px;
+  z-index: -1;
+}
+
+h2 {
+  color: #fffdd0;
+  line-height: 0;
+  padding: 0;
+  display: contents;
+  margin-top: 9px;
+  font-weight: 900;
+}
+
+.links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.bio {
+  grid-area: bio;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+p {
+  color: #fffdd0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+b {
+  color: black;
+  font-weight: 900;
+}
+
+a {
+  color: #fffdd0;
+  font-style: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: grey;
+}
+
+small {
+  font-size: 70%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .body-wrapper {
+    margin: 0;
+    width: 400px!important;
+    padding: 1em;
+    padding-bottom: 0;
+  }
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+    grid-row-gap: 10px;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+    grid-row-gap: 10px;
+  }
+  .billboard-subtext {
+    width: 400px!important;
+  }
+  .billboard-header-shell {
+    transform: rotate(-15deg) scale(0.6) translate(-162px, 15px);
+  }
+}
+
+
+    </style>
   </head>
-  <body style="overflow:hidden;font-family:monospace;">
-    <div class="content">
-      <div id="doc">
-      <topic class="large" style="font-family:monospace;text-transform:none;">Andrew Duberstein</topic>
-      <p>Full-stack software engineer, former tech lead manager at
-      <a href="https://uber.com">Uber</a> and instructor at
-      <a href="https://generalassemb.ly/instructors/andrew-duberstein/7941">General Assembly</a>.
-      <p>I set up systems to process petabytes of self-driving car sensor data,
-      wrote models that saved millions a month from fraudsters,
-      and watched Uber grow from 300 employees in San Francisco
-      to over 18,000 globally.
-      <p>I freelance. Get in touch by contacting <code>ajduberstein+consulting@gmail.com</code>.</p>
-      <br>
-      <small>
-        <p><em><a href="/linkedin_generator/" target="_blank">LinkedIn Message Generator</a></em></p>
-        <p><em><a href="https://github.com/uber/deck.gl/tree/master/bindings/python/pydeck" target="_blank">pydeck</a></em></p>
-      </small>
-    </div>
+  <body>
+  <div class='body-wrapper'>
+    <section class='billboard'>
+            <div class='billboard-header-shell'>
+	      <h1 class='billboard-h1'>
+		      <small><span>A</span><span>N</span><span>D</span><span>R</span><span>E</span><span>W</span></small></br>
+                <span>D</span><span>U</span><span>B</span><span>E</span><span>R</span><span>S</span><span>T</span><span>E</span><span>I</span><span>N</span></h1>
+	      <h1 class='billboard-h1'><small>ANDREW</small></br>DUBERSTEIN</h1>
+            </div>
+	    <div class='billboard-subtext'>
+		    <p>Personal website</p>
+		    <hr/>
+	    </div>
+    </section>
+    <section class='bio'>
+      <h2>About</h2>
+      <div class='bio-text'>
+        <p>I set up systems to process petabytes of self-driving car sensor data,
+	   wrote models that saved millions a month from fraudsters,
+	   and watched Uber grow from 300 employees in San Francisco to over 20,000 globally.
+           I'm on Twitter as <a href='https://twitter.com/ajdstein'>@ajdstein</a>.
+	   </br>
+	   </br>
+	   Need help? <b>I freelance.</b> Get in touch at <a href="mailto:ajduberstein+consulting@gmail.com">ajduberstein+consulting@gmail.com</a>.
+	   </br>
+	</p>
+      </div>
+    </section>
+    <section class='links'>
+      <h2>Links and projects</h2>
+      <div>
+        <div class='capped-bullet'>
+		<p>- <a href='https://github.com/uber/deck.gl/blob/master/bindings/python/pydeck/README.md'>pydeck</a>, high-scale geospatial data visualization for the Python programming language</p>
+	        <p>- <a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></p>
+	        <p>- <a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></p>
+		<p>- A small selection of data visualizations I did for Uber during 2014-2015 in
+		    <a href='https://www.washingtonpost.com/news/wonk/wp/2014/07/21/uber-is-tapping-into-the-too-drunk-to-drive-market-user-data-suggest/'>The Washington Post</a>,
+		    <a href='https://cdn.theatlantic.com/assets/media/img/posts/2015/01/Screen_Shot_2015_01_22_at_7.23.21_PM/5bb7a8d9f.png'>The Atlantic</a>, and
+		    <a href='https://www.businessinsider.com/ubers-new-years-eve-chart-2015-2015-1'>Business Insider</a></p>
+      </div>
+    </section>
+  </div>
   </body>
 </html>
