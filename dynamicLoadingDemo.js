@@ -15,7 +15,7 @@
 })(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, function (window) {
 
 	'use strict';
-  dynamicLoadingDemo = {}
+  var dynamicLoadingDemo = {}
   dynamicLoadingDemo.testing = 'testing';
   console.log('loading dynamicLoadingDemo')
   return dynamicLoadingDemo;
