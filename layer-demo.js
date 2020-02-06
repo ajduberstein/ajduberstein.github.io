@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("@deck.gl/core"), require("@deck.gl/layers"));
+		module.exports = factory(require("deck"), require("deck"));
 	else if(typeof define === 'function' && define.amd)
-		define(["@deck.gl/core", "@deck.gl/layers"], factory);
+		define([, ], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("@deck.gl/core"), require("@deck.gl/layers")) : factory(root["@deck.gl/core"], root["@deck.gl/layers"]);
+		var a = typeof exports === 'object' ? factory(require("deck"), require("deck")) : factory(root["deck"], root["deck"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(window, function(__WEBPACK_EXTERNAL_MODULE__deck_gl_core__, __WEBPACK_EXTERNAL_MODULE__deck_gl_layers__) {
@@ -3010,24 +3010,24 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ }),
 
 /***/ "@deck.gl/core":
-/*!********************************!*\
-  !*** external "@deck.gl/core" ***!
-  \********************************/
+/*!*********************************************************************!*\
+  !*** external {"root":"deck","commonjs":"deck","commonjs2":"deck"} ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = __WEBPACK_EXTERNAL_MODULE__deck_gl_core__;\n\n//# sourceURL=webpack:///external_%22@deck.gl/core%22?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE__deck_gl_core__;\n\n//# sourceURL=webpack:///external_%7B%22root%22:%22deck%22,%22commonjs%22:%22deck%22,%22commonjs2%22:%22deck%22%7D?");
 
 /***/ }),
 
 /***/ "@deck.gl/layers":
-/*!**********************************!*\
-  !*** external "@deck.gl/layers" ***!
-  \**********************************/
+/*!*********************************************************************!*\
+  !*** external {"commonjs":"deck","commonjs2":"deck","root":"deck"} ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = __WEBPACK_EXTERNAL_MODULE__deck_gl_layers__;\n\n//# sourceURL=webpack:///external_%22@deck.gl/layers%22?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE__deck_gl_layers__;\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22deck%22,%22commonjs2%22:%22deck%22,%22root%22:%22deck%22%7D?");
 
 /***/ })
 
