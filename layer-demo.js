@@ -100,11 +100,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tagmap_layer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tagmap-layer */ \"./tagmap-layer.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _tagmap_layer__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("const TagmapLayer = __webpack_require__(/*! ./tagmap-layer */ \"./tagmap-layer.js\").default;\n\nconst MyCustomLayer = {};\n\nmodule.exports = Object.assign(MyCustomLayer, TagmapLayer);\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
