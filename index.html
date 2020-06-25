@@ -37,6 +37,10 @@ body {
   "bio bio";
 }
 
+.subtle {
+  font-weight: 100;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -134,11 +138,20 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: black;
 }
 
 small {
   font-size: 70%;
+}
+
+.capped-bullet p:before {
+  content: "-  ";
+}
+
+.capped-bullet p {
+  text-indent: 0.15em;
+  padding-left: -0.6em;
 }
 
 
@@ -148,18 +161,19 @@ small {
     width: 400px!important;
     padding: 1em;
     padding-bottom: 0;
+    grid-row-gap: 0em;
   }
   .bio {
     display: grid;
+    margin-top: 1em;
     grid-template-columns: 1fr;
     padding-bottom: 0;
-    grid-row-gap: 10px;
   }
   .links {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 0;
-    grid-row-gap: 10px;
+    grid-row-gap: 1em;
   }
   .billboard-subtext {
     width: 400px!important;
@@ -204,13 +218,18 @@ small {
       <h2>Links and projects</h2>
       <div>
         <div class='capped-bullet'>
-		<p>- <a href='https://pydeck.gl/'>pydeck</a>, high-scale geospatial data visualization for the Python programming language</p>
-	        <p>- <a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box drawing tool</a></p>
-	        <p>- <a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a></p>
-		<p>- A small selection of data visualizations I did for Uber during 2014-2015 in
+		<p><a href='https://pydeck.gl/'>pydeck</a>,
+			high-scale geospatial data visualization for the Python,
+			over <a class='subtle' href='https://pepy.tech/project/pydeck'>250,000</a> downloads</p> 
+	        <p>GIS utilities: <a href='http://duberste.in/sql_bounding_box/'>SQL geospatial bounding box generator</a>, <a href='https://duberste.in/viewport_finder/'>viewport finder</a></p>
+	        <p><a href='https://duberste.in/linkedin_generator/'>LinkedIn recruiting message generator</a>, which Benedict Evans once called
+		   "<a class='subtle' href='https://raw.githubusercontent.com/ajduberstein/ajduberstein.github.io/master/D8AAAF60-BE30-4DA5-A44A-B45C9F71176F.jpeg'>a cool thing</a>"
+		</p>
+		<p>A small selection of data visualizations I did for Uber during 2014-2015 in
 		    <a href='https://www.washingtonpost.com/news/wonk/wp/2014/07/21/uber-is-tapping-into-the-too-drunk-to-drive-market-user-data-suggest/'>The Washington Post</a>,
 		    <a href='https://cdn.theatlantic.com/assets/media/img/posts/2015/01/Screen_Shot_2015_01_22_at_7.23.21_PM/5bb7a8d9f.png'>The Atlantic</a>, and
-		    <a href='https://www.businessinsider.com/ubers-new-years-eve-chart-2015-2015-1'>Business Insider</a></p>
+		    <a href='https://www.businessinsider.com/ubers-new-years-eve-chart-2015-2015-1'>Business Insider</a>
+		</p>
       </div>
     </section>
   </div>
