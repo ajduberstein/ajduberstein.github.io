@@ -1,0 +1,54 @@
+<html>
+   <head>
+    <title>Quibi Calculator</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68504066-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-68504066-1');
+    </script>
+    </head>
+    <style>
+    body {
+      margin: 30px;
+      font-family: "Lato", Arial;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    input {
+        height: 60px;
+        font-size: 50px;
+	width: 300px;
+    }
+
+    </style>
+
+    <body>
+    How many Quibis is <input onchange="calculateQuibis" id="quibinput" type='number' placeholder="X" value='10'></input> minutes?
+    <br />
+    <br />
+    Answer: <div id="quiboutput"></div>
+    <script>
+
+    function calculateQuibis() {
+	const res = Number(document.getElementById('quibinput').value);
+	document.getElementById('quiboutput').innerText = res / 10.0;
+        window.location.hash = res;
+    }
+    function init() {
+      if (window.location.hash) {
+        document.getElementById('quibinput').value = Number(window.location.hash.replace('#', ''));
+      }
+      calculateQuibis();
+    }
+    document.getElementById('quibinput').addEventListener('input', calculateQuibis);
+    init();
+
+    </script>
+
+    </body>
+</html>
