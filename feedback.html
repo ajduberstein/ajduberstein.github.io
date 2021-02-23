@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Feedback Generator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
      font-family: "Arial";
      margin: 0;
+     background: black;
+     color: white;
     }
     body {
      margin: 5px;
     }
-    h1 {
-      color: darkslategrey;
-    }
     #content {
-      font-size: 55px;
+      font-size: 300%;
+      margin: 10px;
     }
     button {
        width: -webkit-fit-content;
        height: -webkit-fit-content;
        width: -moz-fit-content;
        height: -moz-fit-content;
+       border: 1px solid white;
+       margin: 4px;
+       font-size: 16px;
+       border-radius: 5px;
+    }
+    button:active {
+      background: white;
+      color: black;
+      -webkit-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+      transition: background-color 1000ms linear;
+    }
+
+    .grad1 {
+        background: red;
+        background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .shadow {
+        text-shadow: rgb(255, 255, 255) 2px 2px;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0.9;
     }
     .flex-item {
-      width: calc(90% - 1em);
-      margin: 16px;
+      width: 100%;
+      margin: 20px;
     }
     #core {
       position: absolute;
-      top: min(max(10%, 10px), 40px);
       margin: 10px;
+      display: flex;
+      max-width: 1000px;
+      flex-direction: column;
+      justify-content: space-around;
     }
+    @keyframes move {
+      0% {
+        offset-distance: 0%;
+      }
+      100% {
+        offset-distance: 100%;
+      }
+    }
+
   </style>
 </head>
 <body≥
 <div id='core'>
-<h1>Performance Feedback Generator</h1>
+<div class="flex-item">
+  <h1 class="grad1">Performance Feedback Generator</h1>
+  by <a href='https://duberste.in/'>duber</a>
+</div>
 <div class='flex-item'>
   <button onclick="makeSentence()">Full sentences</button>
   <button onclick="makePhrase()">Key phrases</button>
 </div>
-<div class='flex-item' id="content"></div>
+<div class='flex-item shadow' id="content"></div>
 </div>
 
 <script type="text/javascript">
 let contentNode = document.getElementById("content");
+const gradient = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet']
+let bufferIdx = 0;
+
+function rotateGradient() {
+  bufferIdx += 1;
+  const display = new Array(gradient.length);
+  for (const [i, g] of gradient.entries()) {
+    display[i] = gradient[(i + bufferIdx) % gradient.length];
+  }
+  const colorsStr = display.join(', ');
+  const style = {
+      'background': `linear-gradient(${Math.floor(Math.random() * 360)}deg, ${colorsStr})`,
+    '-webkit-background-clip': 'text',
+    '-webkit-text-fill-color': 'transparent',
+  }
+  Object.assign(contentNode.style, style);
+}
 
 function nab(arr) {
   const i = Math.floor(Math.random() * arr.length);
@@ -53,57 +112,67 @@ function nab(arr) {
 }
 
 function _makeSentence() {
+  rotateGradient();
   const userName = window.location.hash && window.location.hash.replace('#', '') || 'Duber';
-  const phraseOne = nab([
-    "Despite having no previous experience with",
-    "With a profound knowledge of",
-    "Incredibly skilled in",
-    "#superpumped about"]);
+  const phraseOne = nab(["Despite having no previous experience with", "With a profound knowledge of", "Incredibly skilled in", "#superpumped about"]);
   const objectOne = nab([
     "Python web frameworks",
-    "Ruby on Rails legacy code",
-    "teamwork",
+    "knowing the customer",
     "data science",
-    "code reviews",
-    "decentralized finance",
-    "gathering customer feedback",
-    "celebrating the cities",
+    "cross-team collaboration",
     "meritocracy and toe-stepping",
-    "customer solutions"]);
-  const c = nab([
-    "delivers value",
-    "edifies team culture",
-    "derives actionable insights",
-    "adds value",
-    "leverages data",
-    "utilizes analysis",
-    "solves for the customer",
-    "optimizes for risk"]);
-  const d = nab([
-    "builds measurable value",
-    "conducts A/B tests",
-    "manages stakeholders",
-    "embodies #superpumpedness",
-    "makes magic",
-    "lets builders build"]);
+    "bit-twiddling",
+    "SaaS integrations"
+  ]);
+  const c = nab(["delivers value", "edifies team culture", "derives actionable insights", "adds value", "leverages data", "utilizes analysis", "optimizes for risk"]);
+  const d = nab(["builds measurable value", "conducts A/B tests", "embodies #superpumpedness", "makes magic", "lets builders build"]);
   return `${phraseOne} ${objectOne}, ${userName} ${c} and ${d}`;
 }
 
 function _makePhrase() {
+  rotateGradient();
   const a = nab(["high-level", "innovative", "customer-obsessed", "mindful", "entrepreneurial", "collaborative"]);
-  const b = nab(["up-and-to-the-right", "big and bold", "mission-critical", "future-proof", "inspired"]);
-  const c = nab(["bits and atoms", "insights", "#superpumpedness", "science", "optimistic leadership", "solutions", "champion's mindset"]);
+  const b = nab(["up-and-to-the-right", "big and bold", "mission-critical", "future-proof", "inspired", "motivated"]);
+  const c = nab(["bit-flipping", "insights", "#superpumpedness", "science", "optimistic leadership", "solutions", "champion's mindset"]);
   return `${a} ${b} ${c}`;
 }
 
+const randInt = (maxInt=10000) => Math.round(Math.random() * (maxInt))
+
+function stars() {
+  const [x, y] = [event.clientX, event.clientY];
+  const numStars = Math.max(10, randInt(100));
+  const starNodes = [];
+  for (let i = 0; i < numStars; i++) {
+    const star = document.createElement('div');
+    star.innerText = '⭐';
+    Object.assign(star.style, {
+        'offset-path': `path('M${randInt()},${randInt()} C${randInt()},${randInt()} ${randInt()},${randInt()} 0,0')`,
+        'animation': "move 2000ms infinite alternate ease-in-out",
+        'position': 'absolute',
+        'top': y + randInt(10),
+        'left': x + randInt(10),
+        'background': 'transparent'
+    });
+    starNodes.push(star);
+  }
+  for (const star of starNodes) {
+    document.body.appendChild(star);
+  }
+  setTimeout(() => starNodes.forEach(x => x.remove()) , 2000);
+}
+
 function makeSentence() {
+  stars();
   contentNode.innerText = _makeSentence();
 }
 
 function makePhrase() {
+  stars();
   contentNode.innerText = _makePhrase();
 }
 </script>
 
 </body> 
 </html>
+
