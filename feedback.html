@@ -53,10 +53,38 @@ function nab(arr) {
 
 function _makeSentence() {
   const userName = window.location.hash && window.location.hash.replace('#', '') || 'Duber';
-  const phraseOne = nab(["Despite having no previous experience with", "With a profound knowledge of", "Incredibly skilled in", "#superpumped about"]);
-  const objectOne = nab(["Python web frameworks", "teamwork", "data science", "celebrating the cities", "meritocracy and toe-stepping", "bits and atoms"]);
-  const c = nab(["delivers value", "edifies team culture", "derives actionable insights", "adds value", "leverages data", "utilizes analysis", "optimizes for risk"]);
-  const d = nab(["builds measurable value", "conducts A/B tests", "embodies #superpumpedness", "makes magic", "lets builders build"]);
+  const phraseOne = nab([
+    "Despite having no previous experience with",
+    "With a profound knowledge of",
+    "Incredibly skilled in",
+    "#superpumped about"]);
+  const objectOne = nab([
+    "Python web frameworks",
+    "Ruby on Rails legacy code",
+    "teamwork",
+    "data science",
+    "code reviews",
+    "decentralized finance",
+    "gathering customer feedback",
+    "celebrating the cities",
+    "meritocracy and toe-stepping",
+    "customer solutions"]);
+  const c = nab([
+    "delivers value",
+    "edifies team culture",
+    "derives actionable insights",
+    "adds value",
+    "leverages data",
+    "utilizes analysis",
+    "solves for the customer",
+    "optimizes for risk"]);
+  const d = nab([
+    "builds measurable value",
+    "conducts A/B tests",
+    "manages stakeholders",
+    "embodies #superpumpedness",
+    "makes magic",
+    "lets builders build"]);
   return `${phraseOne} ${objectOne}, ${userName} ${c} and ${d}`;
 }
 
