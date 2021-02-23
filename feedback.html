@@ -17,6 +17,7 @@
     #content {
       font-size: 300%;
       margin: 10px;
+      word-wrap: break-word;
     }
     button {
        width: -webkit-fit-content;
@@ -37,25 +38,24 @@
     }
 
     .grad1 {
-        background: red;
-        background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-        background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      background: red;
+      background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+      background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+      background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+      background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .shadow {
-        text-shadow: rgb(255, 255, 255) 2px 2px;
-        -webkit-font-smoothing: antialiased;
-        opacity: 0.9;
+      text-shadow: rgb(255, 255, 255) 2px 2px;
+      -webkit-font-smoothing: antialiased;
+      opacity: 0.9;
     }
     .flex-item {
       width: 100%;
       margin: 20px;
     }
     #core {
-      position: absolute;
       margin: 10px;
       display: flex;
       max-width: 1000px;
@@ -147,19 +147,20 @@ function stars() {
     const star = document.createElement('div');
     star.innerText = '⭐';
     Object.assign(star.style, {
-        'offset-path': `path('M${randInt()},${randInt()} C${randInt()},${randInt()} ${randInt()},${randInt()} 0,0')`,
+        'offset-path': `path('M${randInt()},${randInt()} C${randInt()},${randInt()} ${randInt()},${randInt()} ${-x},${-y}')`,
         'animation': "move 2000ms infinite alternate ease-in-out",
         'position': 'absolute',
         'top': y + randInt(10),
         'left': x + randInt(10),
         'background': 'transparent'
     });
+      console.log(y + randInt(10));
     starNodes.push(star);
   }
   for (const star of starNodes) {
     document.body.appendChild(star);
   }
-  setTimeout(() => starNodes.forEach(x => x.remove()) , 2000);
+  setTimeout(() => starNodes.forEach(x => x.remove()), 2000);
 }
 
 function makeSentence() {
